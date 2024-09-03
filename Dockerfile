@@ -1,23 +1,20 @@
-# Utiliser une image Node.js comme base
-FROM node:18-alpine
+FROM node:16-alpine AS build
 
-# Créer un répertoire de travail
 WORKDIR /app
 
-# Copier les fichiers de package
-COPY package*.json ./
+COPY package.json package-lock.json ./
 
-# Installer les dépendances
 RUN npm install
 
-# Copier le reste des fichiers
 COPY . .
 
-# Construire l'application
 RUN npm run build
 
-# Exposer le port de l'application
+FROM nginx:alpine
+
+COPY --from=build /app/dist /usr/share/nginx/html
+
 EXPOSE 80
 
-# Démarrer l'application
-CMD ["npx", "serve", "dist"]
+CMD ["nginx", "-g", "daemon off;"]
+

@@ -20,10 +20,10 @@
               <router-link to="/" class="nav-link" active-class="active">Accueil</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/add" class="nav-link" active-class="active">Ajouter Recette</router-link>
+              <router-link to="/add-recipe" class="nav-link" active-class="active">Ajouter Recette</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/list" class="nav-link" active-class="active">Liste des Recettes</router-link>
+              <router-link to="/recipes" class="nav-link" active-class="active">Liste des Recettes</router-link>
             </li>
           </ul>
         </div>

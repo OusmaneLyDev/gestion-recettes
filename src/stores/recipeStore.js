@@ -8,18 +8,21 @@ export const useRecipeStore = defineStore('recipeStore', () => {
       title: 'Chocolate Cake',
       ingredients: 'Flour, Sugar, Cocoa Powder, Baking Powder, Milk, Eggs, Vanilla Extract',
       type: 'Dessert',
+      image: 'https://example.com/images/chocolate-cake.jpg',
     },
     {
       id: 2,
       title: 'Caesar Salad',
       ingredients: 'Lettuce, Croutons, Chicken, Caesar Dressing, Parmesan Cheese',
       type: 'Appetizer',
+      image: 'https://example.com/images/caesar-salad.jpg',
     },
     {
       id: 3,
       title: 'Spaghetti Bolognese',
       ingredients: 'Spaghetti, Ground Beef, Tomato Sauce, Onion, Garlic, Olive Oil, Parmesan Cheese',
       type: 'Main Course',
+      image: 'https://example.com/images/spaghetti-bolognese.jpg',
     },
   ])
 
