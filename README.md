@@ -30,30 +30,27 @@ Cette application de gestion de recettes a été développée en utilisant Vue.j
 
 1. **Cloner le dépôt :**
    ```bash
-   git clone https://github.com/OusmaneLyDev/gestion-recettes.git
+     git clone https://github.com/OusmaneLyDev/gestion-recettes.git
+     ```
+2. **Acceder au dossier du projet dépôt :**
+   ```bash
+     cd gestion-recettes
+   ````
 
-   cd gestion-recettes
+ 3.**Installer les dépendances :**
 
-    Installer les dépendances :
-
-    bash
-
-    npm install
-
+```bash
+     npm install
+````
 Lancer l'application en développement :
 
-bash
+```bash
 
-    npm run dev
-
-    Accéder à l'application : Ouvrez votre navigateur et allez à http://localhost:5000.
-
-Utilisation
-
-    Ajouter une recette : Cliquez sur "Ajouter une Recette" dans la barre de navigation et remplissez le formulaire.
-    Modifier une recette : Depuis la liste des recettes, cliquez sur le titre de la recette que vous souhaitez modifier, puis cliquez sur "Modifier".
-    Supprimer une recette : Depuis la liste des recettes, cliquez sur le bouton "Supprimer" à côté de la recette souhaitée.
-    Voir les détails d'une recette : Depuis la liste des recettes, cliquez sur le titre de la recette pour voir ses détails.
+     npm run dev
+````
+ Accéder à l'application : Ouvrez votre navigateur et allez à 
+ 
+ http://localhost:5000.
 
 Gestion de Version avec Git
 
